@@ -1,0 +1,117 @@
+@import   '../../../src/variables.scss' ;
+
+
+.intro{
+    border-bottom: 2px solid $primary-shadow-color;
+    h1 {color: black; font-family: 'Open Sans',
+        sans-serif; 
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 40px; 
+        margin:  16px; }
+}
+
+
+.offers{
+    display: flex; 
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+   //border-top: 2px solid #fabada;
+   border-bottom: 2px solid  $primary-shadow-color;
+
+}
+
+img{
+    width: 300px;
+    height:200px;
+    margin-left:10px;
+}
+
+.input{
+    width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+ }
+ @media screen and (max-width: 992px) {
+    .intro{
+        border-bottom: 2px solid $primary-shadow-color;
+       
+       
+     h1 {
+        color: black; 
+        font-family: 'Open Sans',sans-serif; 
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 40px; 
+        margin: 16px; }
+    }
+    
+    
+    .offers{
+        display: flex; 
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+        border-bottom: 2px solid  $primary-shadow-color;
+    
+    }
+    
+    img{
+        max-width: 200px;
+        height:150px;
+        margin-left:10px;
+    }
+    
+    .input{
+     width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     overflow: hidden;
+     position: absolute;
+     z-index: -1;
+     }
+  }
+  
+  /* On screens that are 600px or less. */
+  @media screen and (max-width: 600px) {
+    .intro{
+        border-bottom: 2px solid $primary-shadow-color;
+        h1 {
+            color: black; 
+            font-family: 'Open Sans', sans-serif; 
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 40px; 
+            margin: 10px; }
+    }
+    
+    
+    .offers{
+        display: flex; 
+        flex-direction: column;
+        align-items: baseline;
+        align-items: center;
+       
+       border-bottom: 2px solid  $primary-shadow-color;
+    
+    }
+    
+    img{
+        width: 350px;
+        height:175px;
+        margin-left:10px;
+    }
+    
+    .input{
+        width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     overflow: hidden;
+     position: absolute;
+     z-index: -1;
+     }
+  }

@@ -1,0 +1,34 @@
+.c-nocart{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__div {
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        & img {
+            max-width: 360px;
+        }
+    }
+
+    &__examples{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       &__newCard{
+           margin: 2%;
+       }
+    }
+  
+       
+    
+
+}
+
+

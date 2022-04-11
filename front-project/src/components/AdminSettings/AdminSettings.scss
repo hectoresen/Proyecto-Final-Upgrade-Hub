@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+
+.adminpanel{
+    margin-top: 5%;
+    &__header{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__products{
+        margin-top: 5%;
+        &-tabpanel{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.lastunits{
+    background-color: #FEEDAF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.inStock{
+    background-color: #C8E6C9;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.outOfStock{
+    background-color: #FFCDD2;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btnActions{
+    display: flex;
+    justify-content: space-around;
+}

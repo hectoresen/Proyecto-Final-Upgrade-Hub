@@ -1,0 +1,66 @@
+
+@media screen and (min-width: 480px) {
+    .profile{
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        &__header{
+            display: flex;
+            justify-content: center;
+
+            &__h5{
+                margin-top: 20px;
+                color: purple;
+            }
+
+            span{
+                color: #f0aeae;
+            }
+        }
+        &__content{
+            margin-top: 5%;
+            display: flex;
+            &-leftbar{
+                width: 20%;
+            }
+            &-main{
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                margin: 5%;
+                &-favproducts{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+
+//MOBILE
+
+.profile{
+    width: 100%;
+    margin-top: 5%;
+    &__header{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    &__content{
+        &-leftbar{
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+        &-main{
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

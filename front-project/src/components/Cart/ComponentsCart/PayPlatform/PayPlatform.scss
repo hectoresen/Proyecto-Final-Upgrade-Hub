@@ -1,0 +1,130 @@
+@import './../../../../variables.scss';
+
+.c-platform{
+
+    &__modal{
+
+    z-index: 100;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90%;
+    min-height: 90%;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 5px 5px 5px rgba(grey, 0.5);
+    background: #F0F0F3;
+    color: $primary-text-color;
+
+        &__div{
+
+            padding: 15px;
+
+            & h4 {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            & h5{
+                font-size: 15px;
+                margin-top: 20px;
+            }
+        }
+
+        &__images{
+
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            & img {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+            }
+
+            &__price{
+
+                margin: 5px;
+                margin-top: 15px;
+                padding: 5px;
+
+            }
+        }
+
+
+    }
+
+    &__buttons{
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__button{
+
+        background: darken($primary-shadow-color, 10%);
+        padding: 10px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        margin: -1px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 10px;
+        }
+    }
+
+    &__order{
+
+    z-index: 200;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 50%;
+    min-height: 50%;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    & button{
+        background: darken($detail-color, 10%);
+        padding: 10px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        margin: -1px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: black;
+        cursor: pointer;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    }
+}

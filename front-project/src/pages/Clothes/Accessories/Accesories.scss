@@ -1,0 +1,126 @@
+@import '../../../variables.scss';
+
+
+
+.bga{
+    background-image: url(https://theluxonomist.es/wp-content/uploads/2021/12/bolso-moda-complementos.jpg);
+    position: fixed;
+    top: 0;
+    left: -10%;
+    right: -10%;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    opacity: 80%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.c-{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &finder {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0px;
+        padding: 25px;
+        width: 20%;
+        min-width: 250px;
+
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+        &__div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        &__label {
+            margin-right: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &__input{
+            width: 30px;
+            height:30px ;
+            margin-top: 2px;
+            border-radius: 100%;
+        }
+
+        &__price{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+            margin-top: 45px;
+            margin-top: 15px;
+            color: white;
+        }
+    }
+}
+
+
+@media screen and (min-width: 789px){
+
+    .c-{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+        &finder {
+    
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 100%;
+            height: 100px;
+    
+            &__div{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__input{
+                margin-right: 5px;
+                width: 25px;
+            }
+            
+            &__price{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-left: 5px;
+                margin-top: 45px;
+                margin-top: 15px;
+            }
+
+        }
+    
+    }
+
+
+}

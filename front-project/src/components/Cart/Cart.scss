@@ -1,0 +1,401 @@
+$white: #f5f5f5;
+$light: #e0c9cb;
+$tan: #c3a1a0;
+$pink: #d9aab7;
+$rose: #ba7e7e;
+$dark: #4e4e4e;
+
+
+
+@import './../../variables.scss';
+
+
+
+
+.bgcart{
+  background-image: url(https://images-ext-2.discordapp.net/external/x_JL-wFq7J4rcZIdoNpnptM9yv-fik73b9F-44mn5io/https/cdn.5dias.com.py/uploads/cdn-3.expansion_.jpg);
+  position: fixed;
+  top: 0;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  opacity: 80%;
+}
+
+.container__all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin: 25px;
+
+  & .items {
+    & .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: auto;
+      height: auto;
+      background: $white;
+      box-shadow: 5px 5px 15px rgba($primary-shadow-color, 0.5);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      padding: 10px;
+      margin: 10px;
+      & .images {
+        align-items: center;
+        & img {
+          width: 150px;
+          height: auto;
+        }
+        
+      }
+
+      & .product {
+        align-items: inherit;
+    display: flex;
+    flex-direction: column;
+        & p {
+          text-align: center;
+          font-size: 180%;
+          color: $secondary-text-color;
+          letter-spacing: 1px;
+        }
+
+        & h1 {
+          text-transform: uppercase;
+          font-size: 1.2em;
+          color: $dark;
+          margin-top: -5px;
+          text-align: center;
+        }
+
+        & h2 {
+          color: $secondary-text-color;
+          margin-top: -5px;
+        }
+        & .desc {
+          text-transform: none;
+          letter-spacing: 0;
+          margin-bottom: 17px;
+          color: $dark;
+          font-size: 0.7em;
+          line-height: 1.6em;
+          margin-right: 25px;
+          text-align: justify;
+        }
+      }
+    }
+
+    & .buttons {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+      button {
+        background: darken($primary-shadow-color, 10%);
+        box-shadow: 2px 2px 2px rgba($primary-shadow-color, 0.5);
+        padding: 10px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        margin: 20px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white;
+        font-size: 1em;
+        cursor: pointer;
+        &:hover {
+          background: $primary-shadow-color;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+  }
+  & .tramitar {
+
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    & button {
+      background: darken($primary-shadow-color, 10%);
+      box-shadow: 5px 5px 15px rgba($primary-shadow-color, 0.5);
+      padding: 10px;
+      display: inline-block;
+      outline: 0;
+      border: 0;
+      border-radius: 2px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $white;
+      cursor: pointer;
+      &:hover {
+        background: $primary-shadow-color;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+    & h1 {
+      font-size: 1.2em;
+      color: $dark;
+    }
+
+    & h2 {
+      color: $secondary-text-color;
+    }   padding: 10px;
+    width: 520px;
+    height: auto;
+    background: $white;
+    box-shadow: 5px 5px 15px rgba($primary-shadow-color, 0.5);
+    border-radius: 10px;
+}
+  }
+/* On screens that are 992px or less,  */
+@media screen and (max-width: 992px) {
+  .container__all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    & .items {
+      & .container {
+       
+        // width: 520px;
+        // height: 350px;
+        background: $white;
+        box-shadow: 5px 5px 15px rgba($rose, 0.5);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 10px;
+        margin: 10px;
+        & .images {
+          align-items: center;
+          & img {
+            width: 290px;
+           
+          }
+          
+        }
+  
+        & .product {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          margin-top: inherit;
+          & p {
+            font-size: 0.6em;
+            color: $rose;
+            letter-spacing: 1px;
+          }
+  
+          & h1 {
+            font-size: 1.2em;
+            color: $dark;
+            margin-top: -5px;
+          }
+  
+          & h2 {
+            color: $tan;
+            margin-top: -5px;
+          }
+          & .desc {
+            text-transform: none;
+            letter-spacing: 0;
+            margin-bottom: 17px;
+            color: $dark;
+            font-size: 0.7em;
+            line-height: 1.6em;
+            margin-right: 25px;
+            text-align: justify;
+          }
+        }
+      }
+  
+      & .buttons {
+          margin: 10px;
+        button {
+          background: darken($light, 10%);
+          box-shadow: 2px 2px 2px rgba($primary-shadow-color, 0.5);
+          padding: 10px;
+          display: inline-block;
+          outline: 0;
+          border: 0;
+          margin: 20px;
+          border-radius: 2px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: $white;
+          font-size: 1em;
+          cursor: pointer;
+          &:hover {
+            background: $rose;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+      }
+    }
+    & .tramitar {
+      & button {
+        background: darken($light, 10%);
+        padding: 10px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        margin: -1px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white;
+        cursor: pointer;
+        &:hover {
+          background: $rose;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+      & h1 {
+        font-size: 1.2em;
+        color: $dark;
+
+      }
+
+      & h2 {
+        color: $tan;
+      }   padding: 10px;
+      width: 520px;
+      height: auto;
+      background: $white;
+      box-shadow: 5px 5px 15px rgba($rose, 0.5);
+      border-radius: 10px;
+  }
+    }
+}
+
+/* On screens that are 600px or less,  */
+@media screen and (max-width: 600px) {
+  .container__all {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: inherit;
+    & .items {
+      & .container {
+        background: $white;
+        box-shadow: 5px 5px 15px rgba($rose, 0.5);
+        border-radius: 10px;
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .images {
+          align-items: center;
+          & img {
+            width: 200px;
+          }
+        }
+        & .product {
+          
+          & p {
+            font-size: 190%;
+            color: $rose;
+            letter-spacing: 1px;
+          }
+  
+          & h1 {
+            font-size: 0.9em;
+            color: $dark;
+            margin-top: -5px;
+          }
+  
+          & h2 {
+            color: $tan;
+            margin-top: -5px;
+            font-size: 0.9em;
+          }
+          & .desc {
+            // text-transform: none;
+            // letter-spacing: 0;
+            // margin-bottom: 17px;
+            // color: $dark;
+            // font-size: 0.7em;
+            // line-height: 1.6em;
+            // margin-right: 25px;
+            // text-align: justify;
+            display:none;
+          }
+        }
+      }
+  
+      & .buttons {
+          margin: 5px;
+          letter-spacing: 10%;
+        button {
+          background: darken($light, 10%);
+          padding: 10px;
+          display: inline-block;
+          outline: 0;
+          border: 0;
+          margin: 5px;
+          border-radius: 2px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: $white;
+          font-size: 1em;
+          cursor: pointer;
+          &:hover {
+            background: $rose;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+      }
+    }
+    & .tramitar {
+      margin-bottom: 12px;
+      & button {
+        background: darken($light, 10%);
+        padding: 10px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        border-radius: 2px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white;
+        cursor: pointer;
+        &:hover {
+          background: $rose;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+      & h1 {
+        font-size: 0.9em;
+        color: $dark;
+      }
+  
+      & h2 {
+        color: $tan;
+        font-size: 0.9em;
+      }  
+    
+      width: 300px;
+      height: auto;
+      background: $white;
+      box-shadow: 5px 5px 15px rgba($rose, 0.5);
+      border-radius: 10px;
+  }
+    }
+}

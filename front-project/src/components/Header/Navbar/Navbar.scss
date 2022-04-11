@@ -1,0 +1,39 @@
+.p-menubar ul{
+  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: blanchedalmond;
+    border-radius: 8px;
+  
+}
+// .p-menubar .p-menubar-root-list .p-menuitem .p-menuitem-link .p-menuitem-link-text{
+ 
+// }
+.p-menubar{
+    justify-content: center;
+}
+// .p-menuitem-link{
+//     & :hover{
+  
+//     }
+// }
+.p-menuitem-text{
+    font-weight: bolder;
+    font-size:large;
+}
+.nnavbar{
+    z-index: 12;
+    background: none;
+    color: black;
+    font-weight: bolder;
+   
+}
+
+
+.hiddenItem{
+    display: none;
+}
+.showItem{
+    display: block;
+}
